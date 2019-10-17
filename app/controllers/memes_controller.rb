@@ -4,7 +4,7 @@ class MemesController < ProtectedController
 
   # GET /memes
   def index
-    @memes = Meme.all
+    @memes = current_user.memes.all
 
     render json: @memes
   end
