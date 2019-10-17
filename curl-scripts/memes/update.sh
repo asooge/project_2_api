@@ -1,4 +1,4 @@
-curl "http://localhost:4741/memes" \
+curl "http://localhost:4741/memes/${ID}" \
   --include \
   --request PATCH \
   --header "Content-Type: application/json" \

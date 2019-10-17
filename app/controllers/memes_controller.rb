@@ -1,6 +1,6 @@
 class MemesController < ProtectedController
   before_action :set_meme, only: [:show, :update, :destroy]
-
+  #skip_before_action :authenticate
 
   # GET /memes
   def index
@@ -43,6 +43,7 @@ class MemesController < ProtectedController
     # Use callbacks to share common setup or constraints between actions.
     def set_meme
       @meme = current_user.memes.find(params[:id])
+      #@meme = Meme.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
