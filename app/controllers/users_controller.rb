@@ -10,6 +10,7 @@ class UsersController < ProtectedController
 
     render json: @users
   end
+
   def signup
     user = User.create(user_creds)
     if user.valid?
