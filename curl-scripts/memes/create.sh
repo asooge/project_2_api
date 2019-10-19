@@ -9,8 +9,7 @@ curl "http://localhost:4741/memes" \
       "text_1": "'"${TEXT_1}"'",
       "font_size_1": "'"${FONT_1}"'",
       "text_2": "'"${TEXT_2}"'",
-      "font_size_2": "'"${FONT_2}"'",
-      "user_id": "'"${USER_ID}"'"
+      "font_size_2": "'"${FONT_2}"'"
     }
   }'
 
