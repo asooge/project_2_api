@@ -1,6 +1,6 @@
 class CommentsController < ProtectedController
   before_action :set_comment, only: [:show, :update, :destroy]
-  skip_before_action :authenticate
+  #skip_before_action :authenticate
   # GET /comments
   def index
 
