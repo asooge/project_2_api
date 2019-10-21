@@ -2,6 +2,13 @@ class MemesController < ProtectedController
   before_action :set_meme, only: [:show, :update, :destroy]
   #skip_before_action :authenticate
 
+  #Get global memes
+  def global
+    @memes = Meme.all
+
+    render json: @memes
+  end
+
   # GET /memes
   def index
     @memes = current_user.memes.all
