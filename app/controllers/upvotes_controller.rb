@@ -1,6 +1,6 @@
 class UpvotesController < ProtectedController
   before_action :set_upvote, only: [:show, :update, :destroy]
-
+  #skip_before_action :authenticate
   # GET /upvotes
   def index
     @upvotes = Upvote.all
